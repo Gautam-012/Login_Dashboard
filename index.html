@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/label.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav_icon" onclick="toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="navbar__left">
+          <h2>Intely</h2>
+        </div>
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-bell" aria-hidden="true">
+              <span class="badge">2</span>
+            </i>
+          </a>
+          <img width="35" src="image/avatar.png" alt="" />
+          <a href="#">
+            <i class="fa fa-chevron-down"></i>
+            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+          </a>
+        </div>
+      </nav>
+
+      <main>
+        <div class="main__container">
+
+          <!-- Champion -->
+          <h1>Hi, Champion</h1>
+          <div class="flex1">
+              
+              <div class="upcoming">
+                <div class="ui animated list">
+                  <h3>Upcoming lessons</h3>
+                  <div class="itemS" style="background: #b9e3ff;">
+                    <img width="30" src="image/avatar.png" alt="" />
+                    <div class="content">
+                      <a class="header">Rachel</a>
+                      <div class="description">
+                        <b>Tutoring, Algebra</b>
+                      </br><a>10 June, 4pm</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemS" style="background: #b9e3ff;">
+                    <img width="30" src="image/avatar.png" alt="" />
+                    <div class="content">
+                      <a class="header">Jenny Hess</a>
+                      <div class="description">
+                        <b>School shomework</b>
+                        </br>
+                        <a>10 June, 7am</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemS" style="background: #b9e3ff;">
+                    <img width="30px" src="image/avatar.png" alt="" />
+                    <div class="content">
+                      <a class="header">Veronika Ossi</a>
+                      <div class="description">
+                        <b>Tutoring, French language</b>
+                        <br/><a>11 June, 5pm</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- MAIN CARDS ENDS HERE -->
+
+                
+              </div> 
+                <!-- Leaderboard -->
+                <div class="ui segment">
+                  <label style="font-size: 25px; " class="Leaderboard">
+                    Leaderboard
+                    
+                    <select class="ui segment">
+                      <option value="Ar">English</option>
+                      <option value="Ch">Chinese</option>
+                      <option value="Da">Danish</option>
+                      <option value="Du">Dutch</option>
+                      <option value="It">Italian</option>
+                      <option value="En">English</option>
+                      <option value="Ge">German</option>
+                      <option value="Gre">Greek</option>
+                      <option value="Hungar">Hungarian</option>
+                      <option value="It">Italian</option>
+                      <option value="Ja">Japanese</option>
+                      <option value="Ko">Korean</option>
+                      <option value="Fre">French</option>
+                      <option value="Li">Lithuanian</option>
+                      <option value="Per">Persian</option>
+                      <option value="It">Italian</option>
+                      <option value="Pol">Polish</option>
+                      <option value="Po">Portuguese</option>
+                      <option value="Russian">Russian</option>
+                      <option value="span">Spanish</option>
+                      <option value="It">Italian</option>
+                      <option value="swed">Swedish</option>
+                      <option value="It">Italian</option>
+                    </select>
+                  </label>
+
+                  <table class="ui celled table">
+                    <thead>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Best Score</th>
+                        <th>Points</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Rank">1</td>
+                      <td data-label="Name">James</td>
+                      <td data-label="Best Score">24</td>
+                      <td data-label="Points">123</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Rank">1</td>
+                      <td data-label="Name">James</td>
+                      <td data-label="Best Score">24</td>
+                      <td data-label="Points">123</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Rank">1</td>
+                      <td data-label="Name">James</td>
+                      <td data-label="Best Score">24</td>
+                      <td data-label="Points">123</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Rank">1</td>
+                      <td data-label="Name">James</td>
+                      <td data-label="Best Score">24</td>
+                      <td data-label="Points">123</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+
+
+          <!-- Graph -->
+          <div class="flex2">
+              <div class="ui segment">
+                <h1>Spent Time</h1>
+                <div class="wrapper">
+                  <canvas id="c"></canvas>
+                  <div class="label"></div>
+                </div>
+              </div>
+
+                <!-- Courses-->
+                <div class="grid-item">
+                <div class="ui segment">
+                  <div class="courseS">
+                    <div class="courseS_top">
+                      <div class="shift">
+                        <label style="font-size: 1.5rem; margin-right: 20px;" >Your Courses</label>
+                        <a  style="background: grey; color: white; border-radius: 5px;
+                        padding: 3px;">
+                          PREMIUM</a>
+                      </div>
+                      <div>
+                        <i class="bookmark icon" style="cursor: pointer; font-size: 1.5rem; color: blue;"></i>
+                        <i class="search icon" style="cursor: pointer; font-size: 1.5rem;"></i>
+                      </div>
+                    </div>
+
+                    <div>
+                      <img src="image/avatar.png" width="15px"> 
+                      <a style="color: grey;">26 courses</a>
+                    </div>
+                    <div class="ui three column grid">
+                      <div class="column">
+                        <div class="ui segment">
+                  
+                          <h3>BEGINNERS</h3>
+                          <h2>Art and Design</h2>
+                        </div>
+                        <div>
+                          by
+                          <img src="./image/avatar.png" width="20px">Brad Stevens
+                          <div class="ui indicating progress">
+                            <div class="bar" style="height: 4px; background:blue;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="ui segment">
+        
+                          <h3>ADVANCED</h3>
+                          <h2>Daily Workouts</h2>
+                        </div>
+                        <div>
+                          by
+                          <img src="./image/avatar.png" width="20px">Brad Stevens
+                          <div class="ui indicating progress">
+                            <div class="bar" style="height: 4px; background: blue;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="column" style="margin-top: 1.5rem;">
+                        <div>
+                          <p class="dashed">+</p>
+                        </div>
+                      </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+       
+
+          <!-- skills -->
+          <div class="ui segment"> 
+            <h1>Skills</h1>
+            <div class="skill-bars">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>jQuery</span>
+                </div>
+                <div class="progress-line jquery">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>Python</span>
+                </div>
+                <div class="progress-line python">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>MySQL</span>
+                </div>
+                <div class="progress-line mysql">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+         <!--TASKS  -->
+         <div class="grid-item">
+         <div class="ui segment">
+          <h1>Tasks</h1>
+          <div class="ui segment">
+            <div class="ui checkbox">
+              <input type="checkbox">
+              <label class="task_box">
+                <h2>
+                  Consise history of Jend. Soediram
+                </h2>
+                </label>
+              <p>Due on 4:30 pm, 3 March 2019</p>
+            </div>
+            <p class="history"></p>
+            <span>History</span>
+            <img src="image/avatar.png" width="25px"/>
+          </div>
+          <div class="ui segment">
+            <div class="ui checkbox">
+              <input type="checkbox">
+              <label class="task_box">
+                <h2>
+                  Consise history of Jend. Soediram
+                </h2>
+                </label>
+              <p>Due on 4:30 am, 3 Feb 2019</p>
+            </div>
+            <p class="history"></p>
+            <span>Arts</span>
+            <img src="image/avatar.png" width="25px"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+         <!-- Calender -->
+         <div class="ui segment">
+          <div class="months">
+            <i class="left angle icon"  style="font-size: 20px; cursor: pointer"></i>
+              <span style="font-size: 20px">May</span>
+                <span style="font-size: 20px">2021</span>
+            <i class="right angle icon" style="font-size: 20px; cursor: pointer"></i>
+          </div>
+          
+          <ul class="weekdays">
+            <li>Mon</li>
+            <li>Tues</li>
+            <li>Wed</li>
+            <li>Thus</li>
+            <li>Fri</li>
+            <li>Sat</li>
+            <li>Sun</li>
+          </ul>
+          
+          <ul class="days">  
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li><span class="active">27</span></li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+      </div>
+
+          <!-- Homework Progress -->
+        <div class="ui segment">
+          <h1>Homework Progress</h1>
+          <div class="change_active" style=" display:flex; justify-content: space-evenly; text-align: center; margin: 10px;">
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="outer"></div>
+              <div class="numb">
+                0%
+              </div>
+              <div class="circle">
+                <div class="dot">
+                  <span></span>
+                </div>
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+            <script>
+              const numb = document.querySelector('.numb');
+              let counter = 0;
+              setInterval(() => {
+                if (counter == 100) {
+                  clearInterval();
+                } else {
+                  counter += 1;
+                  numb.textContent = counter + '%';
+                }
+              }, 80);
+            </script>
+          <h1>Biology
+            <p style="font-size: 10px;">September 7 Monday</p>
+          </h1>
+        </div>
+          <div class="change" style=" display:flex; justify-content: space-evenly; text-align: center; margin: 10px;">
+            
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="outer"></div>
+              <div class="numb">
+                0%
+              </div>
+              <div class="circle">
+                <div class="dot">
+                  <span></span>
+                </div>
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+            <script>
+              const numb = document.querySelector('.numb');
+              let counter = 0;
+              setInterval(() => {
+                if (counter == 100) {
+                  clearInterval();
+                } else {
+                  counter += 1;
+                  numb.textContent = counter + '%';
+                }
+              }, 80);
+            </script>
+            <h1>Biology
+              <p style="font-size: 10px;">September 7 Monday</p>
+            </h1>
+          </div>
+          <div class="change" style=" display:flex; justify-content: space-evenly; text-align: center; margin: 10px;">
+           
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="outer"></div>
+              <div class="numb">
+                0%
+              </div>
+              <div class="circle">
+                <div class="dot">
+                  <span></span>
+                </div>
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+            <script>
+              const numb = document.querySelector('.numb');
+              let counter = 0;
+              setInterval(() => {
+                if (counter == 100) {
+                  clearInterval();
+                } else {
+                  counter += 1;
+                  numb.textContent = counter + '%';
+                }
+              }, 80);
+            </script>
+            <h1>Biology
+              <p style="font-size: 10px;">September 7 Monday</p>
+            </h1>
+          </div>
+        </div>
+
+
+
+        <!-- Goals -->
+
+        <div class="ui segment">
+          <label class="goalS">
+            <h1>
+              Goals
+            </h1>
+            <select class="ui dropdown" style="text-align: right;">
+              <option value="">Weekly</option>
+              <option value="1">Monday</option>
+              <option value="0">Tues</option>
+              <option value="0">Wed</option>
+              <option value="0">Tues</option>
+              <option value="0">Tues</option>
+              <option value="0">Tues</option>
+            </select>
+          </label>
+          
+          <div class="goals">
+            <div style="text-align: center; margin: 10px;">
+              <!-- <h1 >Biology</h1>
+              <p>September 7 Monday</p> -->
+              <div class="circular">
+                <div class="inner"></div>
+                <div class="outer"></div>
+                <div class="numb">
+                  0%
+                </div>
+                <div class="circle">
+                  <div class="dot">
+                    <span></span>
+                  </div>
+                  <div class="bar left">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="bar right">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                const numb = document.querySelector('.numb');
+                let counter = 0;
+                setInterval(() => {
+                  if (counter == 100) {
+                    clearInterval();
+                  } else {
+                    counter += 1;
+                    numb.textContent = counter + '%';
+                  }
+                }, 80);
+              </script>
+            </div>
+            <div class="ui radio checkbox">
+              <input type="radio" name="radio" checked="">
+              <label>Uncompleted</label>
+              <input type="radio" name="radio" checked="checked" style="color: purple;">
+              <label >Completed</label>
+            </div>
+          </div>
+        </div>
+
+
+          <!-- Navbar -->
+      </main>
+
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <h1>Dashboard</h1>
+          </div>
+          <i
+            onclick="closeSidebar()"
+            class="fa fa-times"
+            id="sidebarIcon"
+            aria-hidden="true"
+          ></i>
+        </div>
+
+        <div class="sidebar__menu">
+          <div class="sidebar__link active_menu_link">
+            <i class="fa fa-home"></i>
+            <a href="#">Home</a>
+          </div>
+          <!-- <h2>MNG</h2> -->
+          <div class="sidebar__link">
+            <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <a href="#">Tutoring</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-book"></i>
+            <a href="#">My Courses</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-graduation-cap"></i>
+            <a href="#">My school
+              <span class="badge">3</span>
+            </a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-file"></i>
+            <a href="#">Test</a>
+          </div>
+
+          <br />
+          <div class="sidebar__link">
+            <i class="fa fa-pencil"></i>
+            <a href="#">Notes</a>
+          </div>
+
+          <div class="sidebar__link">
+            <i class="fa fa-bookmark"></i>
+            <a href="#">Bookmarks</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-cog"></i>
+            <a href="#">Settings</a>
+          </div>
+          <br />
+
+          <div class="App">
+            <div class="Download">
+              <a>Download our mobile app</a>
+            </div>
+            <a class="com">intelymobile.com</a>
+            <i class="fa fa-download"></i>
+          </div>
+          <div class="adv">
+            <a>
+              <h2>Advertisement here</h2>
+            </a>
+          </div>
+          <br />
+          <div class="friends">
+            <div>
+              <img width="100" src="./image/kristy.png" alt="" />
+              <h2>Invite Friends</h2>
+              <p>Get Free Months Premium</p>
+              <span class="get">Get the link</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
